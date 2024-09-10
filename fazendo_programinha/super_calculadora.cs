@@ -83,7 +83,7 @@ namespace fazendo_programinha
                         lbHistoric.Text += vNumAtual + " = ";
                         break;
                     }
-                case "PageUp":
+                case "^":
                     {
                         lb_view.Text = Math.Pow((double)vNumAnt, (double)vNumAtual).ToString();
                         lbHistoric.Text += vNumAtual + " = ";
@@ -132,6 +132,7 @@ namespace fazendo_programinha
                 lb_view.Text = "0";
             }
         }
+
         private void b_ce_Click(object sender, EventArgs e)
         {
             lb_view.Text = "0";
@@ -148,6 +149,10 @@ namespace fazendo_programinha
             lb_view.Text = (double.Parse(lb_view.Text) * -1).ToString();
 
         }
+
+        private void b_percentage_Click(object sender, EventArgs e)
+        {
+            lb_view.Text = (double.Parse(lb_view.Text) / 100).ToString(); 
+        }
     }
 }
-
