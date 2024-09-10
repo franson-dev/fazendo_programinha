@@ -132,5 +132,22 @@ namespace fazendo_programinha
                 lb_view.Text = "0";
             }
         }
+        private void b_ce_Click(object sender, EventArgs e)
+        {
+            lb_view.Text = "0";
+        }
+
+        private void b_c_Click(object sender, EventArgs e)
+        {
+            lb_view.Text = "0";
+            lbHistoric.Text = "";
+        }
+
+        private void b_more_and_less_Click(object sender, EventArgs e)
+        {
+            lb_view.Text = (double.Parse(lb_view.Text) * -1).ToString();
+
+        }
     }
 }
+
